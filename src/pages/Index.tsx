@@ -1,13 +1,37 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useEffect } from 'react';
+import Header from '@/components/Header';
+import Hero from '@/components/Hero';
+import Features from '@/components/Features';
+import HowItWorks from '@/components/HowItWorks';
+import FAQ from '@/components/Faq';
+import CTA from '@/components/CTA';
+import Footer from '@/components/Footer';
+import WhatsAppButton from '@/components/WhatsAppButton';
+import LeadPopup from '@/components/LeadPopup';
+import SEOProvider from '@/components/SEOProvider';
 
 const Index = () => {
+  useEffect(() => {
+    // Initialize tracking or other functionality if needed
+    console.log('Landing page loaded');
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <SEOProvider />
+      <Header />
+      <main>
+        <Hero />
+        <Features />
+        <HowItWorks />
+        <FAQ />
+        <CTA />
+      </main>
+      <Footer />
+      <WhatsAppButton />
+      <LeadPopup />
+    </>
   );
 };
 
