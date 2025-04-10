@@ -10,6 +10,7 @@ import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import LeadPopup from '@/components/LeadPopup';
 import SEOProvider from '@/components/SEOProvider';
+import seoConfig from '@/config/seo.config';
 
 const Index = () => {
   useEffect(() => {
@@ -19,7 +20,13 @@ const Index = () => {
 
   return (
     <>
-      <SEOProvider />
+      <SEOProvider 
+        title={seoConfig.title}
+        description={seoConfig.description}
+        keywords={seoConfig.keywords}
+        ogImage={seoConfig.ogImage}
+        ogUrl={seoConfig.ogUrl}
+      />
       <Header />
       <main>
         <Hero />
