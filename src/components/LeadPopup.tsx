@@ -12,35 +12,46 @@ const LeadPopup = () => {
   const [hasInteracted, setHasInteracted] = useState(false);
   const { toast } = useToast();
 
-  // Show popup after 30s
+  // Check localStorage on component mount
   useEffect(() => {
+    const hasClosedPopup = localStorage.getItem('comandaTopPopupClosed');
+    if (hasClosedPopup) {
+      setHasInteracted(true);
+    }
+  }, []);
+
+  // Show popup after 30s if user hasn't interacted
+  useEffect(() => {
+    if (hasInteracted) return;
+    
     const timer = setTimeout(() => {
-      if (!hasInteracted) {
-        setIsOpen(true);
-      }
+      setIsOpen(true);
     }, 30000);
 
     return () => clearTimeout(timer);
   }, [hasInteracted]);
 
   useEffect(() => {
-    const handleBeforeUnload = () => {
-      setHasInteracted(true);
-      setIsOpen(true);
-    };
-
-    window.addEventListener('mouseout', (e) => {
+    const handleMouseOut = (e: MouseEvent) => {
       // Exit intent detection
-      if (e.clientY < 0 && !hasInteracted) {
-        setHasInteracted(true);
+      if (e.clientY < 0 && !hasInteracted && !isOpen) {
         setIsOpen(true);
       }
-    });
+    };
+
+    window.addEventListener('mouseout', handleMouseOut);
 
     return () => {
-      window.removeEventListener('mouseout', handleBeforeUnload);
+      window.removeEventListener('mouseout', handleMouseOut);
     };
-  }, [hasInteracted]);
+  }, [hasInteracted, isOpen]);
+
+  const handleClose = () => {
+    setIsOpen(false);
+    setHasInteracted(true);
+    // Save to localStorage to prevent reopening
+    localStorage.setItem('comandaTopPopupClosed', 'true');
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -64,7 +75,7 @@ const LeadPopup = () => {
       });
       setLoading(false);
       setEmail('');
-      setIsOpen(false);
+      handleClose();
     }, 1000);
   };
 
@@ -78,7 +89,7 @@ const LeadPopup = () => {
         <Button 
           variant="ghost" 
           className="absolute top-2 right-2 p-1 h-8 w-8 rounded-full"
-          onClick={() => setIsOpen(false)}
+          onClick={handleClose}
         >
           <X size={18} />
         </Button>
