@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import { useTranslation } from '@/hooks/useTranslation';
 import {
   Accordion,
   AccordionContent,
@@ -7,45 +8,46 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const faqItems = [
-  {
-    question: "É necessário internet para utilizar o ComandaTop?",
-    answer: "Sim, o ComandaTop funciona com conexão à internet, mas possui sistema de cache que permite operações básicas mesmo com conexão intermitente. Recomendamos uma conexão Wi-Fi estável para melhor desempenho."
-  },
-  {
-    question: "Em quantos celulares posso instalar o aplicativo?",
-    answer: "O ComandaTop pode ser instalado em quantos dispositivos forem necessários para seu estabelecimento, sem custo adicional. Cada garçom pode ter seu próprio acesso com perfil personalizado."
-  },
-  {
-    question: "O sistema funciona para bares, restaurantes e lanchonetes?",
-    answer: "Sim! O ComandaTop foi desenvolvido para atender diversos tipos de estabelecimentos: restaurantes, bares, lanchonetes, cafeterias, food trucks e similares."
-  },
-  {
-    question: "Preciso comprar algum equipamento específico?",
-    answer: "Não é necessário nenhum equipamento especial. O ComandaTop funciona em smartphones Android e iOS, tablets e computadores que você já possui. Para impressão, é compatível com impressoras térmicas comuns."
-  },
-  {
-    question: "Como funciona o suporte técnico?",
-    answer: "Oferecemos suporte técnico por chat, WhatsApp e e-mail, com atendimento 7 dias por semana. Clientes dos planos premium também contam com suporte telefônico prioritário."
-  },
-  {
-    question: "O sistema divide contas entre clientes?",
-    answer: "Sim, o ComandaTop permite divisão de contas de diversas formas: em partes iguais, por consumo individual ou personalizado. Tudo de forma rápida e sem complicações."
-  }
-];
-
 const FAQ = () => {
+  const { t } = useTranslation();
   const [openItem, setOpenItem] = useState<string | null>("item-0");
+  
+  const faqItems = [
+    {
+      question: t('faq.items.internet.question'),
+      answer: t('faq.items.internet.answer')
+    },
+    {
+      question: t('faq.items.devices.question'),
+      answer: t('faq.items.devices.answer')
+    },
+    {
+      question: t('faq.items.business-types.question'),
+      answer: t('faq.items.business-types.answer')
+    },
+    {
+      question: t('faq.items.equipment.question'),
+      answer: t('faq.items.equipment.answer')
+    },
+    {
+      question: t('faq.items.support.question'),
+      answer: t('faq.items.support.answer')
+    },
+    {
+      question: t('faq.items.bill-splitting.question'),
+      answer: t('faq.items.bill-splitting.answer')
+    }
+  ];
   
   return (
     <section id="faq" className="py-20 bg-light">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Perguntas Frequentes
+            {t('faq.title')}
           </h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            Tire suas dúvidas sobre o ComandaTop e descubra como ele pode ajudar seu negócio.
+            {t('faq.subtitle')}
           </p>
         </div>
         

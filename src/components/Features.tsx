@@ -7,56 +7,59 @@ import {
   BarChart3,
   Clock
 } from "lucide-react";
-
-const features = [
-  {
-    icon: <Smartphone size={36} className="text-primary" />,
-    title: "Anote pedidos direto do celular",
-    description: "Esqueça o papel! O garçom registra tudo em segundos, direto no app.",
-    delay: "animate-delay-100"
-  },
-  {
-    icon: <Utensils size={36} className="text-primary" />,
-    title: "Pedidos enviados direto para a cozinha",
-    description: "Mais agilidade, menos erros. O preparo começa na hora!",
-    delay: "animate-delay-200"
-  },
-  {
-    icon: <LayoutDashboard size={36} className="text-primary" />,
-    title: "Controle completo de mesas e comandas",
-    description: "Visualize ocupações, organize atendimentos e aumente a rotatividade.",
-    delay: "animate-delay-300"
-  },
-  {
-    icon: <CreditCard size={36} className="text-primary" />,
-    title: "PDV online integrado",
-    description: "Acompanhe vendas, lucros e desempenho em tempo real — de onde estiver.",
-    delay: "animate-delay-100"
-  },
-  {
-    icon: <BarChart3 size={36} className="text-primary" />,
-    title: "Relatórios financeiros automáticos",
-    description: "Análises detalhadas e gestão financeira simplificada para decisões mais inteligentes.",
-    delay: "animate-delay-200"
-  },
-  {
-    icon: <Clock size={36} className="text-primary" />,
-    title: "Eficiência operacional",
-    description: "Reduza o tempo de atendimento e aumente a satisfação dos clientes com processos otimizados.",
-    delay: "animate-delay-300"
-  }
-];
+import { useTranslation } from '@/hooks/useTranslation';
 
 const Features = () => {
+  const { t } = useTranslation();
+  
+  const features = [
+    {
+      icon: <Smartphone size={36} className="text-primary" />,
+      title: t('features.items.mobile-orders.title'),
+      description: t('features.items.mobile-orders.description'),
+      delay: "animate-delay-100"
+    },
+    {
+      icon: <Utensils size={36} className="text-primary" />,
+      title: t('features.items.kitchen-orders.title'),
+      description: t('features.items.kitchen-orders.description'),
+      delay: "animate-delay-200"
+    },
+    {
+      icon: <LayoutDashboard size={36} className="text-primary" />,
+      title: t('features.items.table-management.title'),
+      description: t('features.items.table-management.description'),
+      delay: "animate-delay-300"
+    },
+    {
+      icon: <CreditCard size={36} className="text-primary" />,
+      title: t('features.items.pos.title'),
+      description: t('features.items.pos.description'),
+      delay: "animate-delay-100"
+    },
+    {
+      icon: <BarChart3 size={36} className="text-primary" />,
+      title: t('features.items.reports.title'),
+      description: t('features.items.reports.description'),
+      delay: "animate-delay-200"
+    },
+    {
+      icon: <Clock size={36} className="text-primary" />,
+      title: t('features.items.efficiency.title'),
+      description: t('features.items.efficiency.description'),
+      delay: "animate-delay-300"
+    }
+  ];
+
   return (
     <section id="funcionalidades" className="py-20 bg-light">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Funcionalidades que transformam seu negócio
+            {t('features.title')}
           </h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            Tudo o que você precisa para gerenciar seu estabelecimento de forma eficiente e lucrativa.
+            {t('features.subtitle')}
           </p>
         </div>
         

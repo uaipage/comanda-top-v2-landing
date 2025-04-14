@@ -1,9 +1,10 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
+import { useTranslation } from '@/hooks/useTranslation';
 
 const Header = () => {
+  const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   
@@ -39,31 +40,31 @@ const Header = () => {
             onClick={() => scrollToSection('funcionalidades')}
             className="font-medium hover:text-primary transition-colors"
           >
-            Funcionalidades
+            {t('header.features')}
           </button>
           <button 
             onClick={() => scrollToSection('como-funciona')}
             className="font-medium hover:text-primary transition-colors"
           >
-            Como Funciona
+            {t('header.how-it-works')}
           </button>
           <button 
             onClick={() => scrollToSection('faq')}
             className="font-medium hover:text-primary transition-colors"
           >
-            FAQ
+            {t('header.faq')}
           </button>
           <button 
             onClick={() => scrollToSection('contato')}
             className="font-medium hover:text-primary transition-colors"
           >
-            Contato
+            {t('header.contact')}
           </button>
           <Button 
             onClick={() => scrollToSection('teste-gratis')}
             className="bg-primary hover:bg-primary-light text-white font-semibold"
           >
-            Testar Grátis
+            {t('header.free-trial')}
           </Button>
         </nav>
         
@@ -84,31 +85,31 @@ const Header = () => {
               onClick={() => scrollToSection('funcionalidades')}
               className="font-medium py-2 hover:text-primary transition-colors"
             >
-              Funcionalidades
+              {t('header.features')}
             </button>
             <button 
               onClick={() => scrollToSection('como-funciona')}
               className="font-medium py-2 hover:text-primary transition-colors"
             >
-              Como Funciona
+              {t('header.how-it-works')}
             </button>
             <button 
               onClick={() => scrollToSection('faq')}
               className="font-medium py-2 hover:text-primary transition-colors"
             >
-              FAQ
+              {t('header.faq')}
             </button>
             <button 
               onClick={() => scrollToSection('contato')}
               className="font-medium py-2 hover:text-primary transition-colors"
             >
-              Contato
+              {t('header.contact')}
             </button>
             <Button 
               onClick={() => scrollToSection('teste-gratis')}
               className="bg-primary hover:bg-primary-light text-white font-semibold w-full"
             >
-              Testar Grátis
+              {t('header.free-trial')}
             </Button>
           </div>
         </div>

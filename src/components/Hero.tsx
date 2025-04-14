@@ -1,8 +1,10 @@
-
 import { Button } from '@/components/ui/button';
 import { ArrowRight, PlayCircle } from 'lucide-react';
+import { useTranslation } from '@/hooks/useTranslation';
 
 const Hero = () => {
+  const { t } = useTranslation();
+  
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -16,19 +18,15 @@ const Hero = () => {
         <div className="flex flex-col lg:flex-row items-center">
           <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fade-in">
-              Atenda mais rápido, comande com precisão e controle seu restaurante
-              <span className="text-primary"> na palma da mão</span>
+              {t('hero.headline')}
+              <span className="text-primary"> {t('hero.subheadline')}</span>
             </h1>
-            <p className="text-lg md:text-xl mb-8 text-gray-700 animate-fade-in animate-delay-200">
-              O ComandaTop conecta garçons, cozinha e gestão financeira em tempo real.
-              Aumente suas vendas, reduza erros e ganhe tempo para o que realmente importa.
-            </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in animate-delay-300">
               <Button 
                 onClick={() => scrollToSection('teste-gratis')} 
                 className="btn-primary flex items-center gap-2"
               >
-                Teste grátis agora
+                {t('hero.cta-primary')}
                 <ArrowRight size={18} />
               </Button>
               <Button 
@@ -37,7 +35,7 @@ const Hero = () => {
                 onClick={() => scrollToSection('como-funciona')}
               >
                 <PlayCircle size={18} />
-                Ver demonstração
+                {t('hero.cta-secondary')}
               </Button>
             </div>
           </div>

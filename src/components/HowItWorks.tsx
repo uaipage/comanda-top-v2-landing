@@ -1,41 +1,43 @@
-
 import { useState, useEffect } from 'react';
 import { Check } from 'lucide-react';
-
-const steps = [
-  {
-    id: 1,
-    title: "Garçom anota o pedido",
-    description: "Direto no celular, com agilidade e sem erros.",
-    image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-  },
-  {
-    id: 2,
-    title: "Pedido chega na cozinha",
-    description: "Imediatamente e de forma organizada, sem ruídos na comunicação.",
-    image: "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-  },
-  {
-    id: 3,
-    title: "Cliente consome",
-    description: "Enquanto isso, tudo é atualizado em tempo real na comanda.",
-    image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2074&q=80"
-  },
-  {
-    id: 4,
-    title: "Comanda é fechada no PDV",
-    description: "Fechamento rápido, com divisão de conta sem dor de cabeça.",
-    image: "https://images.unsplash.com/photo-1556741533-6e6a62bd8b49?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-  },
-  {
-    id: 5,
-    title: "Relatório é gerado automaticamente",
-    description: "Visualize dados valiosos e tome decisões com mais segurança.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-  }
-];
+import { useTranslation } from '@/hooks/useTranslation';
 
 const HowItWorks = () => {
+  const { t } = useTranslation();
+  
+  const steps = [
+    {
+      id: 1,
+      title: t('how-it-works.steps.step1.title'),
+      description: t('how-it-works.steps.step1.description'),
+      image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+    },
+    {
+      id: 2,
+      title: t('how-it-works.steps.step2.title'),
+      description: t('how-it-works.steps.step2.description'),
+      image: "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+    },
+    {
+      id: 3,
+      title: t('how-it-works.steps.step3.title'),
+      description: t('how-it-works.steps.step3.description'),
+      image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2074&q=80"
+    },
+    {
+      id: 4,
+      title: t('how-it-works.steps.step4.title'),
+      description: t('how-it-works.steps.step4.description'),
+      image: "https://images.unsplash.com/photo-1556741533-6e6a62bd8b49?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+    },
+    {
+      id: 5,
+      title: t('how-it-works.steps.step5.title'),
+      description: t('how-it-works.steps.step5.description'),
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+    }
+  ];
+
   const [activeStep, setActiveStep] = useState(1);
   
   useEffect(() => {
@@ -51,10 +53,10 @@ const HowItWorks = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Como funciona
+            {t('how-it-works.title')}
           </h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            Um fluxo ágil, do pedido ao pagamento — mais eficiência em cada etapa.
+            {t('how-it-works.subtitle')}
           </p>
         </div>
         
