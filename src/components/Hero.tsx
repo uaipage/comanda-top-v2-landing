@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { ArrowRight, PlayCircle } from 'lucide-react';
 import { useTranslation } from '@/hooks/useTranslation';
@@ -11,7 +12,7 @@ const Hero = () => {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
-  
+
   return (
     <section className="relative pt-32 pb-24 md:pt-40 md:pb-32 bg-gradient-to-b from-light to-white overflow-hidden">
       <div className="container mx-auto px-4">
@@ -19,18 +20,20 @@ const Hero = () => {
           <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fade-in">
               {t('hero.headline')}
-              <span className="text-primary"> {t('hero.subheadline')}</span>
             </h1>
+            <p className="text-lg md:text-xl mb-8 text-gray-700 animate-fade-in animate-delay-200">
+              {t('hero.subheadline')}
+            </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in animate-delay-300">
-              <Button 
-                onClick={() => scrollToSection('teste-gratis')} 
+              <Button
+                onClick={() => scrollToSection('teste-gratis')}
                 className="btn-primary flex items-center gap-2"
               >
                 {t('hero.cta-primary')}
                 <ArrowRight size={18} />
               </Button>
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 className="flex items-center gap-2"
                 onClick={() => scrollToSection('como-funciona')}
               >
@@ -43,9 +46,9 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-20"></div>
               <div className="relative bg-white shadow-xl rounded-2xl overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" 
-                  alt="Garçom utilizando o sistema ComandaTop" 
+                <img
+                  src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                  alt="Garçom utilizando o sistema ComandaTop"
                   className="w-full h-auto"
                   loading="lazy"
                 />
