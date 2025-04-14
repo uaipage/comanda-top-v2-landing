@@ -1,12 +1,8 @@
 
-import './index.css';
-
-// Este arquivo é usado apenas durante o desenvolvimento
-// Para produção, entry-client.tsx é usado
-
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App.tsx';
+import './index.css';
 
 const container = document.getElementById('root');
 if (container) {
