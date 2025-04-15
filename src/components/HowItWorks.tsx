@@ -1,115 +1,137 @@
 import { useState, useEffect } from 'react';
-import { Check } from 'lucide-react';
+import { Edit, Printer, QrCode, RefreshCcw, Smartphone } from 'lucide-react';
 import { useTranslation } from '@/hooks/use-translation.ts';
+
 
 const HowItWorks = () => {
   const { t } = useTranslation();
-  
+
   const steps = [
     {
-      id: 1,
-      title: t('how-it-works.steps.step1.title'),
-      description: t('how-it-works.steps.step1.description'),
-      image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+      icon: <Edit className="w-6 h-6"/>,
+      title: t('how-it-works.steps.[0].title'),
+      description: t('how-it-works.steps.[0].description'),
     },
     {
-      id: 2,
-      title: t('how-it-works.steps.step2.title'),
-      description: t('how-it-works.steps.step2.description'),
-      image: "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+      icon: <QrCode className="w-6 h-6"/>,
+      title: t('how-it-works.steps.[1].title'),
+      description: t('how-it-works.[1].step2.description'),
     },
     {
-      id: 3,
-      title: t('how-it-works.steps.step3.title'),
-      description: t('how-it-works.steps.step3.description'),
-      image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2074&q=80"
+      icon: <Printer className="w-6 h-6"/>,
+      title: t('how-it-works.steps.[2].title'),
+      description: t('how-it-works.steps.[2].description'),
     },
     {
-      id: 4,
-      title: t('how-it-works.steps.step4.title'),
-      description: t('how-it-works.steps.step4.description'),
-      image: "https://images.unsplash.com/photo-1556741533-6e6a62bd8b49?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+      icon: <Smartphone className="w-6 h-6"/>,
+      title: t('how-it-works.steps.[3].title'),
+      description: t('how-it-works.steps.[3].description'),
     },
     {
-      id: 5,
-      title: t('how-it-works.steps.step5.title'),
-      description: t('how-it-works.steps.step5.description'),
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+      icon: <RefreshCcw className="w-6 h-6"/>,
+      title: t('how-it-works.steps.[4].title'),
+      description: t('how-it-works.steps.[4].description'),
     }
   ];
 
   const [activeStep, setActiveStep] = useState(1);
-  
+
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveStep(prev => (prev < steps.length ? prev + 1 : 1));
     }, 5000);
-    
+
     return () => clearInterval(interval);
   }, []);
-  
+
   return (
-    <section id="como-funciona" className="py-20 bg-white">
+    <section id="como-funciona" className="py-20 bg-gradient-to-b from-white to-primary-bg">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            {t('how-it-works.title')}
-          </h2>
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            {t('how-it-works.subtitle')}
-          </p>
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              {t('how-it-works.title')}
+            </h2>
+            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+              {t('how-it-works.subtitle')}
+            </p>
+          </div>
         </div>
-        
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
-          <div className="w-full lg:w-1/2 order-2 lg:order-1">
-            <div className="bg-light rounded-xl p-1">
-              <div className="relative rounded-lg overflow-hidden aspect-video">
-                {steps.map((step) => (
-                  <img
-                    key={step.id}
-                    src={step.image}
-                    alt={step.title}
-                    className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${activeStep === step.id ? 'opacity-100' : 'opacity-0'}`}
-                    loading="lazy"
-                  />
-                ))}
+
+
+        {/* Steps Desktop */}
+        <div className="hidden md:block relative mt-20">
+          {/* Timeline Line */}
+          <div className="absolute left-0 right-0 top-8 h-1 bg-gray-200 z-0"></div>
+
+          {/* Steps */}
+          <div className="relative z-10 flex justify-between">
+            {steps.map((step, index) => (
+              <div
+                key={index}
+                className="flex flex-col items-center w-1/5"
+                onMouseEnter={() => setActiveStep(index)}
+              >
+                {/* Circle */}
+                <div
+                  className={`w-16 h-16 rounded-full flex items-center justify-center mb-4 transition-all duration-300 ${
+                    activeStep === index ? 'bg-primary text-white scale-110' : 'bg-white text-primary border-2 border-primary'
+                  }`}
+                >
+                  {step.icon}
+                </div>
+
+                {/* Content */}
+                <div className={`text-center transition-all duration-300 ${
+                  activeStep === index ? 'opacity-100 transform scale-105' : 'opacity-70'
+                }`}>
+                  <h3 className="text-lg font-bold mb-2">{step.title}</h3>
+                  <p className="text-sm text-gray-600 max-w-[200px] mx-auto">
+                    {step.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Steps Mobile */}
+        <div className="md:hidden mt-12 space-y-8">
+          {steps.map((step, index) => (
+            <div
+              key={index}
+              className={`flex items-start space-x-4 p-4 rounded-lg transition-all duration-300 ${
+                activeStep === index ? 'bg-white shadow-md' : ''
+              }`}
+              onClick={() => setActiveStep(index)}
+            >
+              <div
+                className={`w-12 h-12 rounded-full flex items-center justify-center shrink-0 ${
+                  activeStep === index ? 'bg-primary text-white' : 'bg-white text-primary border-2 border-primary'
+                }`}
+              >
+                {step.icon}
+              </div>
+              <div>
+                <h3 className="text-lg font-bold mb-1">{step.title}</h3>
+                <p className="text-gray-600">{step.description}</p>
               </div>
             </div>
-          </div>
-          
-          <div className="w-full lg:w-1/2 order-1 lg:order-2">
-            <div className="space-y-8">
-              {steps.map((step) => (
-                <div
-                  key={step.id}
-                  className={`flex ${
-                    activeStep === step.id
-                      ? 'bg-primary text-white'
-                      : 'bg-light hover:bg-gray-200 cursor-pointer'
-                  } rounded-lg p-6 transition-all duration-300`}
-                  onClick={() => setActiveStep(step.id)}
-                >
-                  <div className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center mr-4 ${
-                    activeStep === step.id 
-                      ? 'bg-white text-primary' 
-                      : 'bg-primary text-white'
-                  }`}>
-                    {activeStep === step.id ? <Check /> : step.id}
-                  </div>
-                  <div>
-                    <h3 className={`text-xl font-semibold mb-2 ${
-                      activeStep === step.id ? '' : 'text-dark'
-                    }`}>
-                      {step.title}
-                    </h3>
-                    <p className={activeStep === step.id ? 'text-white/90' : 'text-gray-600'}>
-                      {step.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+          ))}
+        </div>
+
+        {/* Timeline Navigation */}
+        <div className="flex justify-center mt-12 md:mt-20 space-x-2">
+          {steps.map((_, index) => (
+            <button
+              key={index}
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                activeStep === index ? 'bg-primary w-8' : 'bg-gray-300'
+              }`}
+              onClick={() => setActiveStep(index)}
+              aria-label={`Step ${index + 1}`}
+            ></button>
+          ))}
         </div>
       </div>
     </section>

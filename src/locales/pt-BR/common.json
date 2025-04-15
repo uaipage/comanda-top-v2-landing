@@ -1,106 +1,101 @@
-
 {
   "header": {
     "features": "Funcionalidades",
-    "how-it-works": "Como Funciona", 
+    "how-it-works": "Como Funciona",
     "faq": "FAQ",
     "contact": "Contato",
     "free-trial": "Testar Grátis"
   },
   "hero": {
-    "headline": "Atenda mais rápido, comande com precisão e controle seu restaurante na palma da mão",
-    "subheadline": "O ComandaTop conecta garçons, cozinha e gestão financeira em tempo real. Venda mais, comande melhor e economize horas todos os dias com o sistema nº1 para restaurantes.",
+    "headline": "Comece a usar seu cardápio digital hoje mesmo",
+    "subheadline": "Experimente gratuitamente e veja como é simples e prático ter um cardápio digital para seu estabelecimento.",
     "cta-primary": "Teste grátis agora",
     "cta-secondary": "Ver demonstração"
   },
   "features": {
     "title": "Funcionalidades que transformam seu negócio",
-    "subtitle": "Tudo o que você precisa para gerenciar seu estabelecimento de forma eficiente e lucrativa.",
+    "subtitle": "Tudo que você precisa para oferecer a melhor experiência aos seus clientes.",
     "items": {
       "mobile-orders": {
-        "title": "Anote pedidos direto do celular",
-        "description": "Esqueça o papel! O garçom registra tudo em segundos, direto no app."
+        "title": "Acesso via QR Code",
+        "description": "O cliente acessa com a câmera do celular, sem precisar baixar aplicativo."
       },
       "kitchen-orders": {
-        "title": "Pedidos enviados direto para a cozinha",
-        "description": "Mais agilidade, menos erros. O preparo começa na hora!"
+        "title": "Atualização em tempo real",
+        "description": "Edite pratos e preços com facilidade a qualquer momento."
       },
       "table-management": {
-        "title": "Controle completo de mesas e comandas",
-        "description": "Visualize ocupações, organize atendimentos e aumente a rotatividade."
+        "title": "Imagens dos pratos",
+        "description": "Destaque o visual da sua comida com fotos de alta qualidade."
       },
       "pos": {
-        "title": "PDV online integrado",
-        "description": "Acompanhe vendas, lucros e desempenho em tempo real — de onde estiver."
+        "title": "Painel de controle",
+        "description": "Interface simples e direta para gerenciar seu cardápio."
       },
       "reports": {
-        "title": "Relatórios financeiros automáticos",
-        "description": "Análises detalhadas e gestão financeira simplificada para decisões mais inteligentes."
+        "title": "Design responsivo",
+        "description": "Ótima visualização em qualquer dispositivo, de celulares a tablets."
       },
       "efficiency": {
-        "title": "Atenda mais rápido e melhor",
-        "description": "Reduza o tempo de atendimento e aumente a satisfação dos clientes com processos otimizados."
+        "title": "Suporte via WhatsApp",
+        "description": "Ajuda rápida e personalizada sempre que precisar."
       }
     }
   },
   "how-it-works": {
     "title": "Como funciona",
-    "subtitle": "Um fluxo ágil, do pedido ao pagamento — mais eficiência em cada etapa.",
-    "steps": {
-      "step1": {
-        "title": "Garçom anota o pedido",
-        "description": "Direto no celular, com agilidade e sem erros."
+    "subtitle": "Processo simples e rápido para ter seu cardápio digital funcionando.",
+    "steps": [
+      {
+        "title": "1. Cadastre os pratos no painel",
+        "description": "Adicione nomes, descrições, preços e categorias no painel administrativo intuitivo."
       },
-      "step2": {
-        "title": "Pedido chega na cozinha",
-        "description": "Imediatamente e de forma organizada, sem ruídos na comunicação."
+      {
+        "title": "2. Gere seu link e QR Code",
+        "description": "O sistema gera automaticamente seu link personalizado e QR Code exclusivo."
       },
-      "step3": {
-        "title": "Cliente consome",
-        "description": "Enquanto isso, tudo é atualizado em tempo real na comanda."
+      {
+        "title": "3. Imprima o QR Code",
+        "description": "Imprima e posicione os códigos nas mesas do seu estabelecimento."
       },
-      "step4": {
-        "title": "Comanda é fechada no PDV",
-        "description": "Fechamento rápido, com divisão de conta sem dor de cabeça."
+      {
+        "title": "4. Cliente acessa o cardápio",
+        "description": "Seus clientes acessam o cardápio escaneando o código com o celular."
       },
-      "step5": {
-        "title": "Relatório é gerado automaticamente",
-        "description": "Visualize dados valiosos e tome decisões com mais segurança."
+      {
+        "title": "5. Atualize quando quiser",
+        "description": "Modifique itens, preços ou disponibilidade a qualquer momento."
       }
-    }
+    ]
   },
   "faq": {
     "title": "Perguntas Frequentes",
     "subtitle": "Tire suas dúvidas sobre o ComandaTop e descubra como ele pode ajudar seu negócio.",
-    "items": {
-      "internet": {
-        "question": "É necessário internet para utilizar o ComandaTop?",
-        "answer": "Sim, o ComandaTop funciona com conexão à internet, mas possui sistema de cache que permite operações básicas mesmo com conexão intermitente. Recomendamos uma conexão Wi-Fi estável para melhor desempenho."
+    "items": [
+      {
+        "question": "Preciso de internet?",
+        "answer": "Sim, é necessário internet para acessar o cardápio digital. Porém, muitos estabelecimentos oferecem Wi-Fi aos clientes, o que facilita o acesso. O QR code pode ser escaneado mesmo offline, mas para carregar o cardápio é preciso conexão."
       },
-      "devices": {
-        "question": "Em quantos celulares posso instalar o aplicativo?",
-        "answer": "O ComandaTop pode ser instalado em quantos dispositivos forem necessários para seu estabelecimento, sem custo adicional. Cada garçom pode ter seu próprio acesso com perfil personalizado."
+      {
+        "question": "Funciona em celular e tablet?",
+        "answer": "Sim, o ComandaTop funciona perfeitamente em qualquer dispositivo: smartphones, tablets e computadores. O design é totalmente responsivo e se adapta automaticamente ao tamanho da tela do dispositivo utilizado."
       },
-      "business-types": {
-        "question": "O sistema funciona para bares, restaurantes e lanchonetes?",
-        "answer": "Sim! O ComandaTop foi desenvolvido para atender diversos tipos de estabelecimentos: restaurantes, bares, lanchonetes, cafeterias, food trucks e similares."
+      {
+        "question": "Quantos pratos posso cadastrar?",
+        "answer": "No plano grátis, você pode cadastrar até 10 pratos. No plano Profissional, o número de itens é ilimitado, permitindo cadastrar todo o seu cardápio sem restrições."
       },
-      "equipment": {
-        "question": "Preciso comprar algum equipamento específico?",
-        "answer": "Não é necessário nenhum equipamento especial. O ComandaTop funciona em smartphones Android e iOS, tablets e computadores que você já possui. Para impressão, é compatível com impressoras térmicas comuns."
+      {
+        "question": "Posso colocar fotos dos pratos?",
+        "answer": "Sim, no plano Profissional você pode fazer upload de fotos para cada prato. As imagens ajudam a destacar seus produtos e tornam o cardápio muito mais atrativo para os clientes."
       },
-      "support": {
-        "question": "Como funciona o suporte técnico?",
-        "answer": "Oferecemos suporte técnico por chat, WhatsApp e e-mail, com atendimento 7 dias por semana. Clientes dos planos premium também contam com suporte telefônico prioritário."
-      },
-      "bill-splitting": {
-        "question": "O sistema divide contas entre clientes?",
-        "answer": "Sim, o ComandaTop permite divisão de contas de diversas formas: em partes iguais, por consumo individual ou personalizado. Tudo de forma rápida e sem complicações."
+      {
+        "question": "É gratuito mesmo?",
+        "answer": "Sim, oferecemos um plano totalmente gratuito com recursos básicos para você experimentar e começar a usar. Para funcionalidades avançadas como itens ilimitados e upload de fotos, recomendamos o plano Profissional."
       }
-    }
+    ]
   },
   "cta": {
-    "title": "Teste o ComandaTop gratuitamente por 14 dias",
+    "title": "Teste o ComandaTop gratuitamente",
     "subtitle": "Comece seu teste gratuito agora e veja a diferença no seu salão já hoje — sem cartão, sem compromisso.",
     "placeholder": "Seu melhor email",
     "button": "Iniciar teste gratuito",
@@ -118,7 +113,7 @@
   },
   "popup": {
     "title": "Oferta Especial",
-    "subtitle": "Teste gratuito por 14 dias",
+    "subtitle": "Teste gratuito",
     "message": "Aumente a eficiência do seu estabelecimento hoje mesmo!",
     "description": "Deixe seu email para acessar o teste gratuito do ComandaTop.",
     "placeholder": "Seu email",

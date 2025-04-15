@@ -1,50 +1,44 @@
-
 import {
-  Smartphone,
-  Utensils,
-  LayoutDashboard,
-  CreditCard,
-  BarChart3,
-  Clock
+  Smartphone, Image as Imagei, Clock, MessageSquare, QrCodeIcon, Monitor
 } from "lucide-react";
 import { useTranslation } from '@/hooks/use-translation.ts';
 
 const Features = () => {
   const { t } = useTranslation();
-  
+
   const features = [
     {
-      icon: <Smartphone size={36} className="text-primary" />,
+      icon: <QrCodeIcon size={36} className="text-primary"/>,
       title: t('features.items.mobile-orders.title'),
       description: t('features.items.mobile-orders.description'),
       delay: "animate-delay-100"
     },
     {
-      icon: <Utensils size={36} className="text-primary" />,
+      icon: <Clock size={36} className="text-primary"/>,
       title: t('features.items.kitchen-orders.title'),
       description: t('features.items.kitchen-orders.description'),
       delay: "animate-delay-200"
     },
     {
-      icon: <LayoutDashboard size={36} className="text-primary" />,
+      icon: <Imagei size={36} className="text-primary"/>,
       title: t('features.items.table-management.title'),
       description: t('features.items.table-management.description'),
       delay: "animate-delay-300"
     },
     {
-      icon: <CreditCard size={36} className="text-primary" />,
+      icon: <Monitor size={36} className="text-primary"/>,
       title: t('features.items.pos.title'),
       description: t('features.items.pos.description'),
       delay: "animate-delay-100"
     },
     {
-      icon: <BarChart3 size={36} className="text-primary" />,
+      icon: <Smartphone size={36} className="text-primary"/>,
       title: t('features.items.reports.title'),
       description: t('features.items.reports.description'),
       delay: "animate-delay-200"
     },
     {
-      icon: <Clock size={36} className="text-primary" />,
+      icon: <MessageSquare size={36} className="text-primary"/>,
       title: t('features.items.efficiency.title'),
       description: t('features.items.efficiency.description'),
       delay: "animate-delay-300"
@@ -62,7 +56,7 @@ const Features = () => {
             {t('features.subtitle')}
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <div
