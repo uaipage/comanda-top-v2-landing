@@ -1,11 +1,10 @@
-
-import translations from '../locales/pt-BR/common.json';
+import { useTranslation as i18nUseTranslation } from "react-i18next";
 
 export const useTranslation = () => {
-  const t = (path: string): string => {
-    return path.split('.').reduce((obj, key) => obj?.[key as keyof typeof obj], translations as any) as string || path;
+  const { t, i18n } = i18nUseTranslation();
+  return {
+    t,
+    changeLanguage: i18n.changeLanguage,
+    currentLanguage: i18n.language,
   };
-
-  return { t };
 };
-
