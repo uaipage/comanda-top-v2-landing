@@ -7,7 +7,7 @@ import {
   BarChart3,
   Clock
 } from "lucide-react";
-import { useTranslation } from '@/hooks/useTranslation';
+import { useTranslation } from '@/hooks/use-translation.ts';
 
 const Features = () => {
   const { t } = useTranslation();

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Check } from 'lucide-react';
-import { useTranslation } from '@/hooks/useTranslation';
+import { useTranslation } from '@/hooks/use-translation.ts';
 
 const HowItWorks = () => {
   const { t } = useTranslation();

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
-import { useTranslation } from '@/hooks/useTranslation';
+import { useTranslation } from '@/hooks/use-translation.ts';
 
 const Header = () => {
   const { t } = useTranslation();

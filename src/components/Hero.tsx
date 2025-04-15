@@ -1,7 +1,7 @@
 
 import { Button } from '@/components/ui/button';
 import { ArrowRight, PlayCircle } from 'lucide-react';
-import { useTranslation } from '@/hooks/useTranslation';
+import { useTranslation } from '@/hooks/use-translation.ts';
 
 const Hero = () => {
   const { t } = useTranslation();

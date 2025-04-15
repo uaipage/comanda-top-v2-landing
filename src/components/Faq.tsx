@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { useTranslation } from '@/hooks/useTranslation';
+import { useTranslation } from '@/hooks/use-translation.ts';
 import {
   Accordion,
   AccordionContent,
