@@ -8,7 +8,7 @@ const container = document.getElementById('root');
 if (container) {
   const root = createRoot(container);
   root.render(
-    <BrowserRouter>
+    <BrowserRouter basename="/comanda-top-v2-landing/">
       <App />
     </BrowserRouter>
   );
