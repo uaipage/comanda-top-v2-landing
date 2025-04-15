@@ -46,7 +46,7 @@ const Privacy = () => {
           <h2>3. Compartilhamento de Dados com Terceiros</h2>
           <p>Podemos compartilhar seus dados com terceiros apenas quando necessário para o funcionamento do sistema, tais como:</p>
           <ul>
-            <li><strong>Sistemas de pagamento</strong>: Para emissão de cobranças e gestão de pagamentos (por exemplo, Asaas)</li>
+            <li><strong>Sistemas de pagamento</strong>: Para emissão de cobranças e gestão de pagamentos</li>
             <li><strong>Integrações ativas</strong>: Ao habilitar a integração com plataformas de pagamento, realizamos cadastros automáticos nesses serviços</li>
           </ul>
           <p><strong>Nunca vendemos ou compartilhamos seus dados com terceiros para fins comerciais sem seu consentimento.</strong></p>
