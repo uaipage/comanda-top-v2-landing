@@ -1,12 +1,11 @@
-
 import { Facebook, Instagram, Linkedin, Mail, Phone } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
     <footer id="contato" className="bg-dark text-white pt-16 pb-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          {/* Column 1 - Logo and Description */}
           <div>
             <a href="/" className="inline-block mb-4">
               <span className="text-2xl font-bold">Comanda<span className="text-primary">Top</span></span>
@@ -27,7 +26,6 @@ const Footer = () => {
             </div>
           </div>
           
-          {/* Column 2 - Links */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Links Úteis</h3>
             <ul className="space-y-2">
@@ -38,18 +36,20 @@ const Footer = () => {
             </ul>
           </div>
           
-          {/* Column 3 - Resources */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Recursos</h3>
             <ul className="space-y-2">
               <li><a href="#" className="text-gray-400 hover:text-primary transition-colors">Blog</a></li>
               <li><a href="#" className="text-gray-400 hover:text-primary transition-colors">Suporte</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-primary transition-colors">Política de Privacidade</a></li>
+              <li>
+                <Link to="/privacidade" className="text-gray-400 hover:text-primary transition-colors">
+                  Política de Privacidade
+                </Link>
+              </li>
               <li><a href="#" className="text-gray-400 hover:text-primary transition-colors">Termos de Uso</a></li>
             </ul>
           </div>
           
-          {/* Column 4 - Contact */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Contato</h3>
             <ul className="space-y-3">
@@ -75,7 +75,9 @@ const Footer = () => {
               &copy; {new Date().getFullYear()} ComandaTop. Todos os direitos reservados.
             </p>
             <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-gray-500 hover:text-primary transition-colors">Política de Privacidade</a>
+              <Link to="/privacidade" className="text-gray-500 hover:text-primary transition-colors">
+                Política de Privacidade
+              </Link>
               <a href="#" className="text-gray-500 hover:text-primary transition-colors">Termos de Uso</a>
             </div>
           </div>
