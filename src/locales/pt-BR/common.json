@@ -9,7 +9,7 @@
   },
   "hero": {
     "headline": "Atenda mais rápido, comande com precisão e controle seu restaurante na palma da mão",
-    "subheadline": "O ComandaTop conecta garçons, cozinha e gestão financeira em tempo real. Aumente suas vendas, reduza erros e ganhe tempo para o que realmente importa.",
+    "subheadline": "O ComandaTop conecta garçons, cozinha e gestão financeira em tempo real. Venda mais, comande melhor e economize horas todos os dias com o sistema nº1 para restaurantes.",
     "cta-primary": "Teste grátis agora",
     "cta-secondary": "Ver demonstração"
   },
@@ -38,7 +38,7 @@
         "description": "Análises detalhadas e gestão financeira simplificada para decisões mais inteligentes."
       },
       "efficiency": {
-        "title": "Eficiência operacional",
+        "title": "Atenda mais rápido e melhor",
         "description": "Reduza o tempo de atendimento e aumente a satisfação dos clientes com processos otimizados."
       }
     }
@@ -101,7 +101,7 @@
   },
   "cta": {
     "title": "Teste o ComandaTop gratuitamente por 14 dias",
-    "subtitle": "Sem compromisso, sem cartão de crédito. Comece a transformar a gestão do seu estabelecimento hoje mesmo.",
+    "subtitle": "Comece seu teste gratuito agora e veja a diferença no seu salão já hoje — sem cartão, sem compromisso.",
     "placeholder": "Seu melhor email",
     "button": "Iniciar teste gratuito",
     "loading": "Enviando...",
@@ -121,7 +121,7 @@
     "subtitle": "Teste gratuito por 14 dias",
     "message": "Aumente a eficiência do seu estabelecimento hoje mesmo!",
     "description": "Deixe seu email para acessar o teste gratuito do ComandaTop.",
-    "placeholder": "Seu melhor email",
+    "placeholder": "Seu email",
     "button": "Quero testar grátis",
     "loading": "Enviando...",
     "privacy": "Ao se cadastrar, você concorda com nossa política de privacidade."
