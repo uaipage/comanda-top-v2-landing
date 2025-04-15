@@ -9,28 +9,28 @@ const HowItWorks = () => {
   const steps = [
     {
       icon: <Edit className="w-6 h-6"/>,
-      title: t('how-it-works.steps.[0].title'),
-      description: t('how-it-works.steps.[0].description'),
+      title: t('how-it-works.steps.0.title'),
+      description: t('how-it-works.steps.0.description'),
     },
     {
       icon: <QrCode className="w-6 h-6"/>,
-      title: t('how-it-works.steps.[1].title'),
-      description: t('how-it-works.[1].step2.description'),
+      title: t('how-it-works.steps.1.title'),
+      description: t('how-it-works.steps.1.description'),
     },
     {
       icon: <Printer className="w-6 h-6"/>,
-      title: t('how-it-works.steps.[2].title'),
-      description: t('how-it-works.steps.[2].description'),
+      title: t('how-it-works.steps.2.title'),
+      description: t('how-it-works.steps.2.description'),
     },
     {
       icon: <Smartphone className="w-6 h-6"/>,
-      title: t('how-it-works.steps.[3].title'),
-      description: t('how-it-works.steps.[3].description'),
+      title: t('how-it-works.steps.3.title'),
+      description: t('how-it-works.steps.3.description'),
     },
     {
       icon: <RefreshCcw className="w-6 h-6"/>,
-      title: t('how-it-works.steps.[4].title'),
-      description: t('how-it-works.steps.[4].description'),
+      title: t('how-it-works.steps.4.title'),
+      description: t('how-it-works.steps.4.description'),
     }
   ];
 
