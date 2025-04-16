@@ -29,7 +29,7 @@ const Terms = () => {
           <ul>
             <li>Criação e personalização de cardápio digital</li>
             <li>Área de gerenciamento com login e senha</li>
-            <li>Integração com meios de pagamento (ex: Asaas)</li>
+            <li>Integração com meios de pagamento</li>
             <li>Acompanhamento de pedidos e clientes</li>
           </ul>
 

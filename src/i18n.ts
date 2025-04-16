@@ -8,7 +8,9 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: "pt-BR",
+    load: 'languageOnly',
+    fallbackLng: 'pt',
+    lng: 'pt',
     debug: process.env.NODE_ENV === "development",
     interpolation: {
       escapeValue: false,

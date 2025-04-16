@@ -1,4 +1,14 @@
 {
+  "comandatop": {
+    "email": "contato@comandatop.com.br",
+    "phone": {
+      "format": "(00) 0000-0000",
+      "tel": "tel:+55000000000"
+    },
+    "facebook": "",
+    "instagram": "",
+    "linkedin": ""
+  },
   "header": {
     "features": "Funcionalidades",
     "how-it-works": "Como Funciona",
@@ -94,32 +104,18 @@
       }
     ]
   },
-  "cta": {
-    "title": "Teste o ComandaTop gratuitamente",
-    "subtitle": "Comece seu teste gratuito agora e veja a diferença no seu salão já hoje — sem cartão, sem compromisso.",
-    "placeholder": "Seu melhor email",
-    "button": "Iniciar teste gratuito",
-    "loading": "Enviando...",
-    "privacy": "Ao se cadastrar, você concorda com nossa política de privacidade."
-  },
   "footer": {
     "about": "Transformando a gestão de restaurantes, bares e lanchonetes com tecnologia intuitiva e eficiente.",
     "useful-links": "Links Úteis",
+    "features": "Funcionalidades",
+    "how-it-works": "Como Funciona",
+    "faq": "FAQ",
+    "free-trial": "Testar Grátis",
     "resources": "Recursos",
     "contact": "Contato",
     "copyright": "Todos os direitos reservados.",
     "privacy-policy": "Política de Privacidade",
     "terms": "Termos de Uso"
-  },
-  "popup": {
-    "title": "Oferta Especial",
-    "subtitle": "Teste gratuito",
-    "message": "Aumente a eficiência do seu estabelecimento hoje mesmo!",
-    "description": "Deixe seu email para acessar o teste gratuito do ComandaTop.",
-    "placeholder": "Seu email",
-    "button": "Quero testar grátis",
-    "loading": "Enviando...",
-    "privacy": "Ao se cadastrar, você concorda com nossa política de privacidade."
   },
   "whatsapp": {
     "message": "Olá, gostaria de saber mais sobre o ComandaTop!"
