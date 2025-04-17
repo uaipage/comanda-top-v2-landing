@@ -11,16 +11,12 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 import LeadPopup from '@/components/LeadPopup';
 import SEOProvider from '@/components/SEOProvider';
 import seoConfig from '@/config/seo.config';
+import PricingSection from "@/components/PricingSection.tsx";
 
 const Index = () => {
-  useEffect(() => {
-    // Initialize tracking or other functionality if needed
-    console.log('Landing page loaded');
-  }, []);
-
   return (
     <>
-      <SEOProvider 
+      <SEOProvider
         title={seoConfig.title}
         description={seoConfig.description}
         keywords={seoConfig.keywords}
@@ -32,6 +28,7 @@ const Index = () => {
         <Hero />
         <Features />
         <HowItWorks />
+        <PricingSection />
         <FAQ />
         <CTA />
       </main>
