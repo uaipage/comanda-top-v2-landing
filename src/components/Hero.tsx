@@ -1,11 +1,11 @@
-
 import { Button } from '@/components/ui/button';
 import { ArrowRight, PlayCircle } from 'lucide-react';
 import { useTranslation } from '@/hooks/use-translation.ts';
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const { t } = useTranslation();
-  
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {

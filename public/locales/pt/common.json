@@ -12,6 +12,7 @@
   "header": {
     "features": "Funcionalidades",
     "how-it-works": "Como Funciona",
+    "plans": "Planos e Preços",
     "faq": "FAQ",
     "contact": "Contato",
     "free-trial": "Testar Grátis"
@@ -78,6 +79,41 @@
       }
     ]
   },
+  "plans": {
+    "title": "Planos e Preços",
+    "subtitle": "Simples, direto e sem pegadinhas. Experimente grátis. Depois escolha o plano ideal para o seu negócio.",
+    "footer": "Cancele quando quiser, sem burocracia.",
+    "cards": {
+      "free": {
+        "title": "Grátis",
+        "subtitle": "Perfeito para quem está começando",
+        "currencySymbol": "R$",
+        "price": "0",
+        "button": "Começar grátis",
+        "features": [
+          "Até 10 pratos",
+          "QR Code personalizado",
+          "Suporte via WhatsApp",
+          "Painel de controle simples",
+          "Atualizações ilimitadas"
+        ]
+      },
+      "professional": {
+        "title": "Profissional",
+        "subtitle": "Recuros completos para seu negócio",
+        "currencySymbol": "R$",
+        "price": "29",
+        "button": "Assinar agora",
+        "features": [
+          "Itens ilimitados",
+          "Upload de fotos dos pratos",
+          "Link customizado (ex: comandatop.com.br/suamarca)",
+          "Suporte prioritário",
+          "Todos os recursos do plano grátis"
+        ]
+      }
+    }
+  },
   "faq": {
     "title": "Perguntas Frequentes",
     "subtitle": "Tire suas dúvidas sobre o ComandaTop e descubra como ele pode ajudar seu negócio.",
@@ -109,6 +145,7 @@
     "useful-links": "Links Úteis",
     "features": "Funcionalidades",
     "how-it-works": "Como Funciona",
+    "plans": "Planos e Preços",
     "faq": "FAQ",
     "free-trial": "Testar Grátis",
     "resources": "Recursos",

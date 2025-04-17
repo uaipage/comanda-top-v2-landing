@@ -5,7 +5,7 @@ import { useTranslation } from "@/hooks/use-translation.ts";
 const Footer = () => {
   const { t } = useTranslation();
   return (
-    <footer id="contato" className="bg-dark text-white pt-16 pb-8">
+    <footer id="footer" className="bg-dark text-white pt-16 pb-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
@@ -34,18 +34,31 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">{t('footer.useful-links')}</h3>
             <ul className="space-y-2">
-              <li><a href="#funcionalidades" className="text-gray-400 hover:text-primary transition-colors">
-                {t('footer.features')}
-              </a></li>
-              <li><a href="#como-funciona" className="text-gray-400 hover:text-primary transition-colors">
-                {t('footer.how-it-works')}
-              </a></li>
-              <li><a href="#faq" className="text-gray-400 hover:text-primary transition-colors">
-                {t('footer.faq')}
-              </a></li>
-              <li><a href="#teste-gratis" className="text-gray-400 hover:text-primary transition-colors">
-                {t('footer.free-trial')}
-              </a></li>
+              <li>
+                <a href="#features" className="text-gray-400 hover:text-primary transition-colors">
+                  {t('footer.features')}
+                </a>
+              </li>
+              <li>
+                <a href="#how-it-works" className="text-gray-400 hover:text-primary transition-colors">
+                  {t('footer.how-it-works')}
+                </a>
+              </li>
+              <li>
+                <a href="#plans" className="text-gray-400 hover:text-primary transition-colors">
+                  {t('footer.plans')}
+                </a>
+              </li>
+              <li>
+                <a href="#faq" className="text-gray-400 hover:text-primary transition-colors">
+                  {t('footer.faq')}
+                </a>
+              </li>
+              <li>
+                <Link to="/free-trial" className="text-gray-400 hover:text-primary transition-colors">
+                  {t('footer.free-trial')}
+                </Link>
+              </li>
             </ul>
           </div>
 

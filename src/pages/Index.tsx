@@ -9,7 +9,7 @@ import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import SEOProvider from '@/components/SEOProvider';
 import seoConfig from '@/config/seo.config';
-import PricingSection from "@/components/PricingSection.tsx";
+import Plans from "@/components/Plans.tsx";
 
 const Index = () => {
   return (
@@ -26,7 +26,7 @@ const Index = () => {
         <Hero />
         <Features />
         <HowItWorks />
-        <PricingSection />
+        <Plans />
         <FAQ />
       </main>
       <Footer />

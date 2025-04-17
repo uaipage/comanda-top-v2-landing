@@ -45,7 +45,7 @@ const HowItWorks = () => {
   }, []);
 
   return (
-    <section id="como-funciona" className="py-20 bg-gradient-to-b from-white to-primary-bg">
+    <section id="how-it-works" className="py-20 bg-gradient-to-b from-white to-primary-bg">
       <div className="container mx-auto px-4">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
