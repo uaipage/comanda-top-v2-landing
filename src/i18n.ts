@@ -16,7 +16,7 @@ i18n
       escapeValue: false,
     },
     backend: {
-      loadPath: "/comanda-top-v2-landing/locales/{{lng}}/common.json",
+      loadPath: "/locales/{{lng}}/common.json",
     },
   });
 
