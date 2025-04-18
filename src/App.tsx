@@ -8,6 +8,8 @@ import Index from "./pages/Index";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
+import Register from "./pages/Register";
+import Contact from "./pages/Contact";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +22,8 @@ const App = () => (
         <Route path="/" element={<Index />} />
         <Route path="/privacidade" element={<Privacy />} />
         <Route path="/termos" element={<Terms />} />
+        <Route path="/cadastro" element={<Register />} />
+        <Route path="/contato" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </TooltipProvider>

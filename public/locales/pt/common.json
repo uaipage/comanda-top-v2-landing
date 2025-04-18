@@ -1,3 +1,4 @@
+
 {
   "comandatop": {
     "email": "contato@comandatop.com.br",
@@ -162,5 +163,48 @@
     "message": "Ops! Página não encontrada",
     "description": "A página que você está procurando pode ter sido removida, renomeada ou está temporariamente indisponível.",
     "button": "Voltar ao início"
+  },
+  "register": {
+    "seo": {
+      "title": "ComandaTop - Cadastre sua Conta | Cardápio Digital para Restaurantes",
+      "description": "Crie sua conta gratuita no ComandaTop e comece a transformar a experiência dos seus clientes com um cardápio digital moderno e intuitivo.",
+      "keywords": "cadastro comanda digital, criar cardápio digital, sistema para restaurante, PDV online, app de garçom"
+    },
+    "title": "Crie sua Conta Gratuita",
+    "subtitle": "Comece a transformar seu negócio hoje mesmo",
+    "form": {
+      "restaurant-name": "Nome do restaurante",
+      "restaurant-name-placeholder": "Ex: Restaurante Sabor Especial",
+      "your-name": "Seu nome",
+      "your-name-placeholder": "Digite seu nome completo",
+      "email": "Email",
+      "email-placeholder": "seuemail@exemplo.com",
+      "phone": "Telefone",
+      "phone-placeholder": "(00) 00000-0000",
+      "submit": "Criar conta grátis"
+    },
+    "success-title": "Cadastro realizado!",
+    "success-message": "Em breve entraremos em contato para ativar sua conta."
+  },
+  "contact": {
+    "seo": {
+      "title": "ComandaTop - Entre em Contato | Suporte para Cardápio Digital",
+      "description": "Precisa de ajuda com seu cardápio digital? Entre em contato com a equipe do ComandaTop para suporte técnico e informações sobre nossos planos.",
+      "keywords": "contato restaurante tech, fale conosco cardápio digital, suporte PDV restaurante, atendimento comanda digital"
+    },
+    "title": "Entre em Contato",
+    "description": "Estamos aqui para ajudar! Entre em contato conosco através dos canais abaixo.",
+    "hours-title": "Horário de Atendimento",
+    "hours": "Segunda a Sexta das 8h às 17h (horário de Brasília)",
+    "email-title": "Email de Suporte",
+    "email": "suporte@comandatop.com.br",
+    "phone-title": "Telefone",
+    "phone": "(11) 3456-7890",
+    "phone-link": "+551134567890",
+    "whatsapp-title": "WhatsApp",
+    "whatsapp": "(11) 98765-4321",
+    "whatsapp-link": "5511987654321",
+    "whatsapp-button": "Conversar no WhatsApp",
+    "contact-button": "Entrar em contato"
   }
 }

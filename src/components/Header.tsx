@@ -1,7 +1,9 @@
+
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 import { useTranslation } from '@/hooks/use-translation.ts';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const { t } = useTranslation();
@@ -30,9 +32,9 @@ const Header = () => {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
-          <a href="/" className="flex items-center">
+          <Link to="/" className="flex items-center">
             <span className="text-2xl font-bold text-primary">Comanda<span className="text-secondary">Top</span></span>
-          </a>
+          </Link>
         </div>
 
         {/* Desktop Navigation */}
@@ -60,14 +62,14 @@ const Header = () => {
           >
             {t('header.faq')}
           </button>
-          <button onClick={() => scrollToSection('footer')}
-                  className="font-medium hover:text-primary transition-colors">
+          <Link to="/contato" className="font-medium hover:text-primary transition-colors">
             {t('header.contact')}
-          </button>
-          <Button onClick={() => scrollToSection('free-trial')}
-                  className="bg-primary hover:bg-primary-light text-white font-semibold">
-            {t('header.free-trial')}
-          </Button>
+          </Link>
+          <Link to="/cadastro">
+            <Button className="bg-primary hover:bg-primary-light text-white font-semibold">
+              {t('header.free-trial')}
+            </Button>
+          </Link>
         </nav>
         {/* Mobile menu button */}
         <button
@@ -106,18 +108,19 @@ const Header = () => {
             >
               {t('header.faq')}
             </button>
-            <button
-              onClick={() => scrollToSection('footer')}
+            <Link 
+              to="/contato"
               className="font-medium py-2 hover:text-primary transition-colors"
             >
               {t('header.contact')}
-            </button>
-            <Button
-              onClick={() => scrollToSection('free-trial')}
-              className="bg-primary hover:bg-primary-light text-white font-semibold w-full"
-            >
-              {t('header.free-trial')}
-            </Button>
+            </Link>
+            <Link to="/cadastro">
+              <Button
+                className="bg-primary hover:bg-primary-light text-white font-semibold w-full"
+              >
+                {t('header.free-trial')}
+              </Button>
+            </Link>
           </div>
         </div>
       )}
