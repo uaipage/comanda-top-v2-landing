@@ -64,7 +64,7 @@ const Header = () => {
                   className="font-medium hover:text-primary transition-colors">
             {t('header.contact')}
           </button>
-          <Button onClick={() => scrollToSection('teste-gratis')}
+          <Button onClick={() => scrollToSection('free-trial')}
                   className="bg-primary hover:bg-primary-light text-white font-semibold">
             {t('header.free-trial')}
           </Button>
@@ -83,16 +83,22 @@ const Header = () => {
         <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg py-4 animate-fade-in">
           <div className="container mx-auto px-4 flex flex-col space-y-4">
             <button
-              onClick={() => scrollToSection('funcionalidades')}
+              onClick={() => scrollToSection('features')}
               className="font-medium py-2 hover:text-primary transition-colors"
             >
               {t('header.features')}
             </button>
             <button
-              onClick={() => scrollToSection('como-funciona')}
+              onClick={() => scrollToSection('how-it-works')}
               className="font-medium py-2 hover:text-primary transition-colors"
             >
               {t('header.how-it-works')}
+            </button>
+            <button
+              onClick={() => scrollToSection('plans')}
+              className="font-medium py-2 hover:text-primary transition-colors"
+            >
+              {t('header.plans')}
             </button>
             <button
               onClick={() => scrollToSection('faq')}
@@ -101,13 +107,13 @@ const Header = () => {
               {t('header.faq')}
             </button>
             <button
-              onClick={() => scrollToSection('contato')}
+              onClick={() => scrollToSection('footer')}
               className="font-medium py-2 hover:text-primary transition-colors"
             >
               {t('header.contact')}
             </button>
             <Button
-              onClick={() => scrollToSection('teste-gratis')}
+              onClick={() => scrollToSection('free-trial')}
               className="bg-primary hover:bg-primary-light text-white font-semibold w-full"
             >
               {t('header.free-trial')}
