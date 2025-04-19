@@ -47,10 +47,12 @@ const Register = () => {
 
   return (
     <>
-      <SEOProvider 
-        title={t('register.seo.title')}
-        description={t('register.seo.description')} 
-        keywords={t('register.seo.keywords')}
+      <SEOProvider
+        title={seoConfig.pages.register.title}
+        description={seoConfig.pages.register.description}
+        keywords={seoConfig.pages.register.keywords}
+        ogImage={seoConfig.ogImage}
+        ogUrl={seoConfig.ogUrl}
       />
       <Header />
       <main className="container-section min-h-[calc(100vh-200px)] py-10 md:py-16 animate-fade-in">

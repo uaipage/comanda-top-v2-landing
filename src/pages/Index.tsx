@@ -15,9 +15,9 @@ const Index = () => {
   return (
     <>
       <SEOProvider
-        title={seoConfig.title}
-        description={seoConfig.description}
-        keywords={seoConfig.keywords}
+        title={seoConfig.pages.index.title}
+        description={seoConfig.pages.index.description}
+        keywords={seoConfig.pages.index.keywords}
         ogImage={seoConfig.ogImage}
         ogUrl={seoConfig.ogUrl}
       />

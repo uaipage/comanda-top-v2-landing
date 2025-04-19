@@ -6,6 +6,7 @@ import SEOProvider from "@/components/SEOProvider";
 import { Mail, Phone, Clock, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import seoConfig from "@/config/seo.config.ts";
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -39,9 +40,11 @@ const Contact = () => {
   return (
     <>
       <SEOProvider
-        title={t('contact.seo.title')}
-        description={t('contact.seo.description')}
-        keywords={t('contact.seo.keywords')}
+        title={seoConfig.pages.contact.title}
+        description={seoConfig.pages.contact.description}
+        keywords={seoConfig.pages.contact.keywords}
+        ogImage={seoConfig.ogImage}
+        ogUrl={seoConfig.ogUrl}
       />
       <Header />
       <main className="container-section min-h-[calc(100vh-200px)] py-10 md:py-16 animate-fade-in">

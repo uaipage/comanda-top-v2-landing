@@ -1,9 +1,6 @@
 
 interface SEOConfig {
   siteName: string;
-  title: string;
-  description: string;
-  keywords: string;
   ogImage: string;
   ogUrl: string;
   pages?: {
@@ -17,14 +14,16 @@ interface SEOConfig {
 
 export const seoConfig: SEOConfig = {
   siteName: 'ComandaTop',
-  title: 'ComandaTop - Sistema para Restaurantes, Bares e Lanchonetes',
-  description: 'Sistema de gestão para restaurantes, bares e lanchonetes. Comanda digital, PDV online, controle de mesas e relatórios financeiros em tempo real.',
-  keywords: 'comanda digital, sistema para restaurante, PDV online, app de garçom, gestão de bares, sistema de mesas, comanda eletrônica',
   ogImage: 'https://comandatop.com.br/og-image.jpg',
   ogUrl: 'https://comandatop.com.br',
   pages: {
+    index: {
+      title: 'ComandaTop - Cardápio Digital para Restaurantes, Bares e Lanchonetes',
+      description: 'Sistema de gestão para restaurantes, bares e lanchonetes. Comanda digital, PDV online, controle de mesas e relatórios financeiros em tempo real.',
+      keywords: 'comanda digital, sistema para restaurante, PDV online, app de garçom, gestão de bares, sistema de mesas, comanda eletrônica',
+    },
     register: {
-      title: 'ComandaTop - Cadastre sua Conta | Cardápio Digital para Restaurantes',
+      title: 'ComandaTop - Cadastre sua Conta | Cardápio Digital para Restaurantes, Bares e Lanchonetes',
       description: 'Crie sua conta gratuita no ComandaTop e comece a transformar a experiência dos seus clientes com um cardápio digital moderno e intuitivo.',
       keywords: 'cadastro comanda digital, criar cardápio digital, sistema para restaurante, PDV online, app de garçom'
     },
