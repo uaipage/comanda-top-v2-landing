@@ -11,8 +11,7 @@ const FAQ = () => {
   const { t } = useTranslation();
   const [openItem, setOpenItem] = useState<string | null>("item-0");
 
-  const faqItems = t('faq.items', { returnObjects: true }) as
-    { question: string; answer: string }[];
+  const faqItems = t('faq.items', { returnObjects: true }) as { question: string; answer: string }[];
 
   return (
     <section id="faq" className="py-20 bg-light">
@@ -30,8 +29,8 @@ const FAQ = () => {
           <Accordion type="single" collapsible className="w-full" value={openItem || undefined}
                      onValueChange={(val) => setOpenItem(val)}>
             {faqItems.map((item, index) => (
-              <AccordionItem key={index} value={`item-${index}`}
-                             className="bg-white mb-4 rounded-lg shadow-sm border-none overflow-hidden">
+              <AccordionItem className="bg-white mb-4 rounded-lg shadow-sm border-none overflow-hidden"
+                             key={index} value={`item-${index}`}>
                 <AccordionTrigger className="hover:no-underline px-6 py-4 font-semibold text-left">
                   {item.question}
                 </AccordionTrigger>

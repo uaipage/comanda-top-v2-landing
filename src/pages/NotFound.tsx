@@ -4,10 +4,6 @@ import { Button } from "@/components/ui/button";
 import SEOProvider from "@/components/SEOProvider";
 
 const NotFound = () => {
-  useEffect(() => {
-    console.error("404 Error: Page not found");
-  }, []);
-
   return (
     <>
       <SEOProvider 

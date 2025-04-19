@@ -20,10 +20,12 @@ const App = () => (
       <Sonner />
       <Routes>
         <Route path="/" element={<Index />} />
-        <Route path="/privacidade" element={<Privacy />} />
-        <Route path="/termos" element={<Terms />} />
         <Route path="/cadastro" element={<Register />} />
         <Route path="/contato" element={<Contact />} />
+
+
+        <Route path="/privacidade" element={<Privacy />} />
+        <Route path="/termos" element={<Terms />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </TooltipProvider>
