@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Edit, Printer, QrCode, RefreshCcw, Smartphone } from 'lucide-react';
 import { useTranslation } from '@/hooks/use-translation.ts';
+import { Routes } from "@/constants/Routes.tsx";
 
 
 const HowItWorks = () => {
@@ -42,10 +43,10 @@ const HowItWorks = () => {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [steps.length]);
 
   return (
-    <section id="how-it-works" className="py-20 bg-gradient-to-b from-white to-primary-bg">
+    <section id={Routes.page.home.section.how_it_works} className="py-20 bg-gradient-to-b from-white to-primary-bg">
       <div className="container mx-auto px-4">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">

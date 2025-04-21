@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Routes } from "@/constants/Routes.tsx";
 
 const FAQ = () => {
   const { t } = useTranslation();
@@ -14,7 +15,7 @@ const FAQ = () => {
   const faqItems = t('faq.items', { returnObjects: true }) as { question: string; answer: string }[];
 
   return (
-    <section id="faq" className="py-20 bg-light">
+    <section id={Routes.page.home.section.faq} className="py-20 bg-light">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">

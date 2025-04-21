@@ -2,6 +2,7 @@ import {
   Smartphone, Image as Imagei, Clock, MessageSquare, QrCodeIcon, Monitor
 } from "lucide-react";
 import { useTranslation } from '@/hooks/use-translation.ts';
+import { Routes } from "@/constants/Routes.tsx";
 
 const Features = () => {
   const { t } = useTranslation();
@@ -46,7 +47,7 @@ const Features = () => {
   ];
 
   return (
-    <section id="features" className="py-20 bg-light">
+    <section id={Routes.page.home.section.features} className="py-20 bg-light">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -60,9 +61,8 @@ const Features = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <div
-              key={index}
               className={`bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 animate-slide-up ${feature.delay}`}
-            >
+              key={index}>
               <div className="bg-light rounded-full w-16 h-16 flex items-center justify-center mb-6">
                 {feature.icon}
               </div>

@@ -9,23 +9,23 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
-            <Link to="/" className="inline-block mb-4">
+            <Link className="inline-block mb-4" to="/">
               <span className="text-2xl font-bold">Comanda<span className="text-primary">Top</span></span>
             </Link>
             <p className="text-gray-400 mb-6">
               {t('footer.about')}
             </p>
             <div className="flex space-x-4">
-              <a href={t('comandatop.facebook')} className="text-gray-400 hover:text-primary transition-colors"
-                 aria-label="Facebook">
+              <a className="text-gray-400 hover:text-primary transition-colors"
+                 href={t('comandatop.facebook')} aria-label="Facebook">
                 <Facebook size={20}/>
               </a>
-              <a href={t('comandatop.instagram')} className="text-gray-400 hover:text-primary transition-colors"
-                 aria-label="Instagram">
+              <a className="text-gray-400 hover:text-primary transition-colors"
+                 href={t('comandatop.instagram')} aria-label="Instagram">
                 <Instagram size={20}/>
               </a>
-              <a href={t('comandatop.linkedin')} className="text-gray-400 hover:text-primary transition-colors"
-                 aria-label="LinkedIn">
+              <a className="text-gray-400 hover:text-primary transition-colors"
+                 href={t('comandatop.linkedin')} aria-label="LinkedIn">
                 <Linkedin size={20}/>
               </a>
             </div>
@@ -35,27 +35,32 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">{t('footer.useful-links')}</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#features" className="text-gray-400 hover:text-primary transition-colors">
+                <a className="text-gray-400 hover:text-primary transition-colors"
+                   href="#features">
                   {t('footer.features')}
                 </a>
               </li>
               <li>
-                <a href="#how-it-works" className="text-gray-400 hover:text-primary transition-colors">
+                <a className="text-gray-400 hover:text-primary transition-colors"
+                   href="#how-it-works">
                   {t('footer.how-it-works')}
                 </a>
               </li>
               <li>
-                <a href="#plans" className="text-gray-400 hover:text-primary transition-colors">
+                <a className="text-gray-400 hover:text-primary transition-colors"
+                   href="#plans">
                   {t('footer.plans')}
                 </a>
               </li>
               <li>
-                <a href="#faq" className="text-gray-400 hover:text-primary transition-colors">
+                <a className="text-gray-400 hover:text-primary transition-colors"
+                   href="#faq">
                   {t('footer.faq')}
                 </a>
               </li>
               <li>
-                <Link to="/free-trial" className="text-gray-400 hover:text-primary transition-colors">
+                <Link className="text-gray-400 hover:text-primary transition-colors"
+                      to="/free-trial">
                   {t('footer.free-trial')}
                 </Link>
               </li>
@@ -65,15 +70,21 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">{t('footer.resources')}</h3>
             <ul className="space-y-2">
-              {/*<li><a href="#" className="text-gray-400 hover:text-primary transition-colors">Blog</a></li>*/}
-              {/*<li><a href="#" className="text-gray-400 hover:text-primary transition-colors">Suporte</a></li>*/}
               <li>
-                <Link to="/privacidade" className="text-gray-400 hover:text-primary transition-colors">
+                <a className="text-gray-400 hover:text-primary transition-colors"
+                   href="#">
+                  Suporte
+                </a>
+              </li>
+              <li>
+                <Link className="text-gray-400 hover:text-primary transition-colors"
+                      to="/privacidade">
                   {t('footer.privacy-policy')}
                 </Link>
               </li>
               <li>
-                <Link to="/termos" className="text-gray-400 hover:text-primary transition-colors">
+                <Link className="text-gray-400 hover:text-primary transition-colors"
+                      to="/termos">
                   {t('footer.terms')}
                 </Link>
               </li>
@@ -85,14 +96,15 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center">
                 <Mail size={18} className="text-primary mr-3"/>
-                <a href={`mailto:${t('comandatop.email')}`}
-                   className="text-gray-400 hover:text-primary transition-colors">
+                <a className="text-gray-400 hover:text-primary transition-colors"
+                   href={`mailto:${t('comandatop.email')}`}>
                   {t('comandatop.email')}
                 </a>
               </li>
               <li className="flex items-center">
                 <Phone size={18} className="text-primary mr-3"/>
-                <a href={t('comandatop.phone.tel')} className="text-gray-400 hover:text-primary transition-colors">
+                <a className="text-gray-400 hover:text-primary transition-colors"
+                   href={t('comandatop.phone.tel')}>
                   {t('comandatop.phone.format')}
                 </a>
               </li>
@@ -105,10 +117,12 @@ const Footer = () => {
               &copy; {new Date().getFullYear()} ComandaTop. {t('footer.copyright')}
             </p>
             <div className="flex space-x-6 text-sm">
-              <Link to="/privacidade" className="text-gray-500 hover:text-primary transition-colors">
+              <Link className="text-gray-500 hover:text-primary transition-colors"
+                    to="/privacidade">
                 {t('footer.privacy-policy')}
               </Link>
-              <Link to="/termos" className="text-gray-500 hover:text-primary transition-colors">
+              <Link className="text-gray-500 hover:text-primary transition-colors"
+                    to="/termos">
                 {t('footer.terms')}
               </Link>
             </div>
