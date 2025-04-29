@@ -11,19 +11,20 @@ import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
 import Register from "./pages/Register";
 import Contact from "./pages/Contact";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
+      <ScrollToTop />
       <Toaster />
       <Sonner />
       <Routes>
         <Route path={Path.page.home.path} element={<Index />} />
         <Route path={Path.page.register.path} element={<Register />} />
         <Route path={Path.page.contact.path} element={<Contact />} />
-
         <Route path={Path.page.privacy.path} element={<Privacy />} />
         <Route path={Path.page.terms.path} element={<Terms />} />
         <Route path="*" element={<NotFound />} />
