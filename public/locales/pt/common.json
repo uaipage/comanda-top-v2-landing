@@ -1,4 +1,3 @@
-
 {
   "comandatop": {
     "email": "contato@comandatop.com.br",
@@ -16,7 +15,8 @@
     "plans": "Planos e Preços",
     "faq": "FAQ",
     "contact": "Contato",
-    "free-trial": "Testar Grátis"
+    "free-trial": "Testar Grátis",
+    "login": "Login"
   },
   "hero": {
     "headline": "Comece a usar seu cardápio digital hoje mesmo",

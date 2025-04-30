@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, PlayCircle } from 'lucide-react';
 import { useTranslation } from '@/hooks/use-translation.ts';
 import { Link } from "react-router-dom";
+import { Routes } from "@/constants/Routes.tsx";
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -19,32 +20,36 @@ const Hero = () => {
         <div className="flex flex-col lg:flex-row items-center">
           <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fade-in">
-              {t('hero.headline')}
+              { t('hero.headline') }
             </h1>
             <p className="text-lg md:text-xl mb-8 text-gray-700 animate-fade-in animate-delay-200">
-              {t('hero.subheadline')}
+              { t('hero.subheadline') }
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in animate-delay-300">
-              <Button
-                onClick={() => scrollToSection('teste-gratis')}
-                className="btn-primary flex items-center gap-2"
-              >
-                {t('hero.cta-primary')}
-                <ArrowRight size={18} />
-              </Button>
+
+              <Link to={ Routes.externalLinks.register.path }>
+                <Button
+                  onClick={ () => scrollToSection('teste-gratis') }
+                  className="btn-primary flex items-center gap-2"
+                >
+                  { t('hero.cta-primary') }
+                  <ArrowRight size={ 18 }/>
+                </Button>
+              </Link>
               <Button
                 variant="outline"
                 className="flex items-center gap-2"
-                onClick={() => scrollToSection('como-funciona')}
+                onClick={ () => scrollToSection('como-funciona') }
               >
-                <PlayCircle size={18} />
-                {t('hero.cta-secondary')}
+                <PlayCircle size={ 18 }/>
+                { t('hero.cta-secondary') }
               </Button>
             </div>
           </div>
           <div className="w-full lg:w-1/2 lg:pl-12 animate-fade-in animate-delay-200">
             <div className="relative">
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-20"></div>
+              <div
+                className="absolute -inset-0.5 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-20"></div>
               <div className="relative bg-white shadow-xl rounded-2xl overflow-hidden">
                 <img
                   src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"

@@ -48,7 +48,10 @@ export const Routes = {
       path: 'https://www.linkedin.com/'
     },
     login: {
-      path: 'https://kc.comandatop.com.br/realms/comandatop/protocol/openid-connect/auth?client_id=account-console&redirect_uri=https://console.comandatop.com.br/home'
+      path: 'https://kc.comandatop.com.br/realms/comandatop/protocol/openid-connect/auth?client_id=comandatop-web-app-client&response_type=code&redirect_uri=https://app.comandatop.com.br/'
+    },
+    register: {
+      path: 'https://kc.comandatop.com.br/realms/comandatop/protocol/openid-connect/auth?kc_action=register&client_id=comandatop-web-app-client&response_type=code&redirect_uri=https://app.comandatop.com.br/'
     }
   }
 } as RoutesConfig;

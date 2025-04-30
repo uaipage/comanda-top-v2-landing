@@ -1,12 +1,12 @@
-import {useState, useEffect} from 'react';
-import {Button} from '@/components/ui/button';
-import {Menu, X} from 'lucide-react';
-import {useTranslation} from '@/hooks/use-translation.ts';
-import {Link, useLocation} from 'react-router-dom';
-import {Routes} from "@/constants/Routes.tsx";
+import { useState, useEffect } from 'react';
+import { Button } from '@/components/ui/button';
+import { Menu, X } from 'lucide-react';
+import { useTranslation } from '@/hooks/use-translation.ts';
+import { Link, useLocation } from 'react-router-dom';
+import { Routes } from "@/constants/Routes.tsx";
 
 const Header = () => {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -32,56 +32,56 @@ const Header = () => {
       // If we're on the home page, scroll to the section
       const element = document.getElementById(id);
       if (element) {
-        element.scrollIntoView({behavior: 'smooth'});
+        element.scrollIntoView({ behavior: 'smooth' });
       }
     } else {
       // If we're not on the home page, navigate to home page with hash
-      window.location.href = `/${id === 'home' ? '' : '#' + id}`;
+      window.location.href = `/${ id === 'home' ? '' : '#' + id }`;
     }
   };
 
   const renderNavItem = (id: string, translationKey: string, additionalClassName: string = '') => {
-    const baseClassName = `font-medium hover:text-primary transition-colors ${additionalClassName}`;
+    const baseClassName = `font-medium hover:text-primary transition-colors ${ additionalClassName }`;
 
     if (isHomePage) {
       return (
         <button
-          className={baseClassName}
-          onClick={() => scrollToSection(id)}
+          className={ baseClassName }
+          onClick={ () => scrollToSection(id) }
         >
-          {t(translationKey)}
+          { t(translationKey) }
         </button>
       );
     } else {
       return (
         <Link
-          to={`/#${id}`}
-          className={baseClassName}
+          to={ `/#${ id }` }
+          className={ baseClassName }
         >
-          {t(translationKey)}
+          { t(translationKey) }
         </Link>
       );
     }
   };
 
-  const renderContactLink = (additionalClassName: string = '') => {
+  const renderContactLink = (translationKey: string, additionalClassName: string = '') => {
     return (
-      <Link 
-        className={`font-medium hover:text-primary transition-colors ${additionalClassName}`}
-        to={Routes.page.contact.path}
+      <Link
+        className={ `font-medium hover:text-primary transition-colors ${ additionalClassName }` }
+        to={ Routes.page.contact.path }
       >
-        {t('header.contact')}
+        { t(translationKey) }
       </Link>
     );
   };
 
-  const renderLoginButton = (isMobile: boolean = false) => {
-    const buttonClassName = `bg-primary hover:bg-primary-light text-white font-semibold ${isMobile ? 'w-full' : ''}`;
+  const renderLoginButton = (translationKey: string, isMobile: boolean = false) => {
+    const buttonClassName = `bg-primary hover:bg-primary-light text-white font-semibold ${ isMobile ? 'w-full' : '' }`;
 
     return (
-      <Link to={Routes.externalLinks.login.path}>
-        <Button className={buttonClassName}>
-          {t('header.login')}
+      <Link to={ Routes.externalLinks.login.path }>
+        <Button className={ buttonClassName }>
+          { t(translationKey) }
         </Button>
       </Link>
     );
@@ -89,45 +89,45 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
+      className={ `fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${ scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4' }` }>
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
           <Link className="flex items-center"
-                to={Routes.page.home.path}>
+                to={ Routes.page.home.path }>
             <span className="text-2xl font-bold text-primary">Comanda<span className="text-secondary">Top</span></span>
           </Link>
         </div>
 
-        {/* Desktop Navigation */}
+        {/* Desktop Navigation */ }
         <nav className="hidden md:flex items-center space-x-8">
-          {renderNavItem(Routes.page.home.section.features, 'header.features')}
-          {renderNavItem(Routes.page.home.section.how_it_works, 'header.how-it-works')}
-          {renderNavItem(Routes.page.home.section.plans, 'header.plans')}
-          {renderNavItem(Routes.page.home.section.faq, 'header.faq')}
-          {renderContactLink()}
-          {renderLoginButton()}
+          { renderNavItem(Routes.page.home.section.features, 'header.features') }
+          { renderNavItem(Routes.page.home.section.how_it_works, 'header.how-it-works') }
+          { renderNavItem(Routes.page.home.section.plans, 'header.plans') }
+          { renderNavItem(Routes.page.home.section.faq, 'header.faq') }
+          { renderContactLink('header.contact') }
+          { renderLoginButton('header.login') }
         </nav>
 
-        {/* Mobile menu button */}
+        {/* Mobile menu button */ }
         <button className="md:hidden text-dark hover:text-primary"
-                onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          {isMenuOpen ? <X size={24}/> : <Menu size={24}/>}
+                onClick={ () => setIsMenuOpen(!isMenuOpen) }>
+          { isMenuOpen ? <X size={ 24 }/> : <Menu size={ 24 }/> }
         </button>
       </div>
 
-      {/* Mobile Navigation */}
-      {isMenuOpen && (
+      {/* Mobile Navigation */ }
+      { isMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg py-4 animate-fade-in">
           <div className="container mx-auto px-4 flex flex-col space-y-4">
-            {renderNavItem(Routes.page.home.section.features, 'header.features', 'py-2')}
-            {renderNavItem(Routes.page.home.section.how_it_works, 'header.how-it-works', 'py-2')}
-            {renderNavItem(Routes.page.home.section.plans, 'header.plans', 'py-2')}
-            {renderNavItem(Routes.page.home.section.faq, 'header.faq', 'py-2')}
-            {renderContactLink('py-2')}
-            {renderLoginButton(true)}
+            { renderNavItem(Routes.page.home.section.features, 'header.features', 'py-2') }
+            { renderNavItem(Routes.page.home.section.how_it_works, 'header.how-it-works', 'py-2') }
+            { renderNavItem(Routes.page.home.section.plans, 'header.plans', 'py-2') }
+            { renderNavItem(Routes.page.home.section.faq, 'header.faq', 'py-2') }
+            { renderContactLink('header.contact', 'py-2') }
+            { renderLoginButton('header.login', true) }
           </div>
         </div>
-      )}
+      ) }
     </header>
   );
 };
