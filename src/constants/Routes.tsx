@@ -47,6 +47,9 @@ export const Routes = {
     linkedin: {
       path: 'https://www.linkedin.com/'
     },
+    login: {
+      path: 'https://kc.comandatop.com.br/realms/comandatop/protocol/openid-connect/auth?client_id=account-console&redirect_uri=https://console.comandatop.com.br/home'
+    }
   }
 } as RoutesConfig;
 
