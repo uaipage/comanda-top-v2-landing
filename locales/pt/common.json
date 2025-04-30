@@ -1,0 +1,200 @@
+{
+  "comandatop": {
+    "email": "contato@comandatop.com.br",
+    "phone": {
+      "format": "(00) 0000-0000",
+      "tel": "tel:+55000000000"
+    },
+    "facebook": "",
+    "instagram": "",
+    "linkedin": ""
+  },
+  "header": {
+    "features": "Funcionalidades",
+    "how-it-works": "Como Funciona",
+    "plans": "Planos e Preços",
+    "faq": "FAQ",
+    "contact": "Contato",
+    "free-trial": "Testar Grátis",
+    "login": "Login"
+  },
+  "hero": {
+    "headline": "Comece a usar seu cardápio digital hoje mesmo",
+    "subheadline": "Experimente gratuitamente e veja como é simples e prático ter um cardápio digital para seu estabelecimento.",
+    "cta-primary": "Teste grátis agora",
+    "cta-secondary": "Ver demonstração"
+  },
+  "features": {
+    "title": "Funcionalidades que transformam seu negócio",
+    "subtitle": "Tudo que você precisa para oferecer a melhor experiência aos seus clientes.",
+    "items": {
+      "mobile-orders": {
+        "title": "Acesso via QR Code",
+        "description": "O cliente acessa com a câmera do celular, sem precisar baixar aplicativo."
+      },
+      "kitchen-orders": {
+        "title": "Atualização em tempo real",
+        "description": "Edite pratos e preços com facilidade a qualquer momento."
+      },
+      "table-management": {
+        "title": "Imagens dos pratos",
+        "description": "Destaque o visual da sua comida com fotos de alta qualidade."
+      },
+      "pos": {
+        "title": "Painel de controle",
+        "description": "Interface simples e direta para gerenciar seu cardápio."
+      },
+      "reports": {
+        "title": "Design responsivo",
+        "description": "Ótima visualização em qualquer dispositivo, de celulares a tablets."
+      },
+      "efficiency": {
+        "title": "Suporte via WhatsApp",
+        "description": "Ajuda rápida e personalizada sempre que precisar."
+      }
+    }
+  },
+  "how-it-works": {
+    "title": "Como funciona",
+    "subtitle": "Processo simples e rápido para ter seu cardápio digital funcionando.",
+    "steps": [
+      {
+        "title": "1. Cadastre os pratos no painel",
+        "description": "Adicione nomes, descrições, preços e categorias no painel administrativo intuitivo."
+      },
+      {
+        "title": "2. Gere seu link e QR Code",
+        "description": "O sistema gera automaticamente seu link personalizado e QR Code exclusivo."
+      },
+      {
+        "title": "3. Imprima o QR Code",
+        "description": "Imprima e posicione os códigos nas mesas do seu estabelecimento."
+      },
+      {
+        "title": "4. Cliente acessa o cardápio",
+        "description": "Seus clientes acessam o cardápio escaneando o código com o celular."
+      },
+      {
+        "title": "5. Atualize quando quiser",
+        "description": "Modifique itens, preços ou disponibilidade a qualquer momento."
+      }
+    ]
+  },
+  "plans": {
+    "title": "Planos e Preços",
+    "subtitle": "Simples, direto e sem pegadinhas. Experimente grátis. Depois escolha o plano ideal para o seu negócio.",
+    "footer": "Cancele quando quiser, sem burocracia.",
+    "cards": {
+      "free": {
+        "title": "Grátis",
+        "subtitle": "Perfeito para quem está começando",
+        "currencySymbol": "R$",
+        "price": "0",
+        "button": "Começar grátis",
+        "features": [
+          "Até 10 pratos",
+          "QR Code personalizado",
+          "Suporte via WhatsApp",
+          "Painel de controle simples",
+          "Atualizações ilimitadas"
+        ]
+      },
+      "professional": {
+        "title": "Profissional",
+        "subtitle": "Recuros completos para seu negócio",
+        "currencySymbol": "R$",
+        "price": "29",
+        "button": "Assinar agora",
+        "features": [
+          "Itens ilimitados",
+          "Upload de fotos dos pratos",
+          "Link customizado (ex: comandatop.com.br/suamarca)",
+          "Suporte prioritário",
+          "Todos os recursos do plano grátis"
+        ]
+      }
+    }
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "subtitle": "Tire suas dúvidas sobre o ComandaTop e descubra como ele pode ajudar seu negócio.",
+    "items": [
+      {
+        "question": "Preciso de internet?",
+        "answer": "Sim, é necessário internet para acessar o cardápio digital. Porém, muitos estabelecimentos oferecem Wi-Fi aos clientes, o que facilita o acesso. O QR code pode ser escaneado mesmo offline, mas para carregar o cardápio é preciso conexão."
+      },
+      {
+        "question": "Funciona em celular e tablet?",
+        "answer": "Sim, o ComandaTop funciona perfeitamente em qualquer dispositivo: smartphones, tablets e computadores. O design é totalmente responsivo e se adapta automaticamente ao tamanho da tela do dispositivo utilizado."
+      },
+      {
+        "question": "Quantos pratos posso cadastrar?",
+        "answer": "No plano grátis, você pode cadastrar até 10 pratos. No plano Profissional, o número de itens é ilimitado, permitindo cadastrar todo o seu cardápio sem restrições."
+      },
+      {
+        "question": "Posso colocar fotos dos pratos?",
+        "answer": "Sim, no plano Profissional você pode fazer upload de fotos para cada prato. As imagens ajudam a destacar seus produtos e tornam o cardápio muito mais atrativo para os clientes."
+      },
+      {
+        "question": "É gratuito mesmo?",
+        "answer": "Sim, oferecemos um plano totalmente gratuito com recursos básicos para você experimentar e começar a usar. Para funcionalidades avançadas como itens ilimitados e upload de fotos, recomendamos o plano Profissional."
+      }
+    ]
+  },
+  "footer": {
+    "about": "Transformando a gestão de restaurantes, bares e lanchonetes com tecnologia intuitiva e eficiente.",
+    "useful-links": "Links Úteis",
+    "features": "Funcionalidades",
+    "how-it-works": "Como Funciona",
+    "plans": "Planos e Preços",
+    "faq": "FAQ",
+    "free-trial": "Testar Grátis",
+    "resources": "Recursos",
+    "contact": "Contato",
+    "copyright": "Todos os direitos reservados.",
+    "privacy-policy": "Política de Privacidade",
+    "terms": "Termos de Uso"
+  },
+  "whatsapp": {
+    "message": "Olá, gostaria de saber mais sobre o ComandaTop!"
+  },
+  "404": {
+    "title": "404",
+    "message": "Ops! Página não encontrada",
+    "description": "A página que você está procurando pode ter sido removida, renomeada ou está temporariamente indisponível.",
+    "button": "Voltar ao início"
+  },
+  "register": {
+    "title": "Crie sua Conta Gratuita",
+    "subtitle": "Comece a transformar seu negócio hoje mesmo",
+    "form": {
+      "restaurant-name": "Nome do restaurante",
+      "restaurant-name-placeholder": "Ex: Restaurante Sabor Especial",
+      "your-name": "Seu nome",
+      "your-name-placeholder": "Digite seu nome completo",
+      "email": "Email",
+      "email-placeholder": "seuemail@exemplo.com",
+      "phone": "Telefone",
+      "phone-placeholder": "(00) 00000-0000",
+      "submit": "Criar conta grátis"
+    },
+    "success-title": "Cadastro realizado!",
+    "success-message": "Em breve entraremos em contato para ativar sua conta."
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "description": "Estamos aqui para ajudar! Entre em contato conosco através dos canais abaixo.",
+    "hours-title": "Horário de Atendimento",
+    "hours": "Segunda a Sexta das 8h às 17h (horário de Brasília)",
+    "email-title": "Email do Suporte",
+    "email": "suporte@comandatop.com.br",
+    "phone-title": "Telefone",
+    "phone": "(11) 3456-7890",
+    "phone-link": "+551134567890",
+    "whatsapp-title": "WhatsApp",
+    "whatsapp": "(11) 98765-4321",
+    "whatsapp-link": "5511987654321",
+    "whatsapp-button": "Conversar no WhatsApp",
+    "contact-button": "Entrar em contato"
+  }
+}
