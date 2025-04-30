@@ -52,6 +52,12 @@ export const Routes = {
     },
     register: {
       path: 'https://kc.comandatop.com.br/realms/comandatop/protocol/openid-connect/auth?kc_action=register&client_id=comandatop-web-app-client&response_type=code&redirect_uri=https://app.comandatop.com.br/'
+    },
+    home_app: {
+      path: 'https://app.comandatop.com.br/'
+    },
+    planos: {
+      path: 'https://app.comandatop.com.br/planos'
     }
   }
 } as RoutesConfig;

@@ -1,6 +1,7 @@
 import { Check } from 'lucide-react';
 import { useTranslation } from "@/hooks/use-translation.ts";
 import { Routes } from "@/constants/Routes.tsx";
+import { Link } from "react-router-dom";
 
 const Plans = () => {
   const { t } = useTranslation();
@@ -13,6 +14,7 @@ const Plans = () => {
       currencySymbol: t('plans.cards.free.currencySymbol'),
       price: t('plans.cards.free.price'),
       button: t('plans.cards.free.button'),
+      link: Routes.externalLinks.home_app.path,
       features: t('plans.cards.free.features', { returnObjects: true }) as string[]
     },
     {
@@ -22,6 +24,7 @@ const Plans = () => {
       currencySymbol: t('plans.cards.professional.currencySymbol'),
       price: t('plans.cards.professional.price'),
       button: t('plans.cards.professional.button'),
+      link: Routes.externalLinks.planos.path,
       features: t('plans.cards.professional.features', { returnObjects: true }) as string[]
     }
   ];
@@ -77,9 +80,12 @@ const Plans = () => {
                   ))}
                 </ul>
                 <div className="mt-9">
-                  <button className={`w-full ${plan.highlighted
-                    ? "mt-8 bg-primary text-primary-foreground hover:bg-primary/90 btn-primary"
-                    : "btn-outline"}`}>{plan.button}</button>
+
+                  <Link to={plan.link}>
+                    <button className={`w-full ${plan.highlighted
+                      ? "mt-8 bg-primary text-primary-foreground hover:bg-primary/90 btn-primary"
+                      : "btn-outline"}`}>{plan.button}</button>
+                  </Link>
                 </div>
               </div>
             </div>
